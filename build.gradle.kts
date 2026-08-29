@@ -5,8 +5,8 @@ java.sourceCompatibility = JavaVersion.VERSION_21
 plugins {
     `java-library`
     `maven-publish`
-    id("com.gradleup.shadow") version "9.4.3"
-    id("io.freefair.lombok") version "8.6"
+    id("com.gradleup.shadow") version "9.6.1"
+    id("io.freefair.lombok") version "9.5.0"
     kotlin("jvm") version "2.2.0"
 }
 
