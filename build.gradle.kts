@@ -16,17 +16,16 @@ repositories {
 }
 
 dependencies {
-    implementation(platform("com.google.cloud:libraries-bom:26.62.0"))
-    implementation("com.google.cloud:google-cloud-storage:2.50.0")
-    implementation("net.dv8tion:JDA:5.3.2")
+    implementation(platform("com.google.cloud:libraries-bom:26.87.0"))
+    implementation("com.google.cloud:google-cloud-storage:2.72.0")
+    implementation("net.dv8tion:JDA:5.5.0")
     // https://mvnrepository.com/artifact/org.kitteh.irc/client-lib
     implementation("org.kitteh.irc:client-lib:9.0.0")
-    implementation("com.google.code.gson:gson:2.13.1")
+    implementation("com.google.code.gson:gson:2.14.0")
     // https://mvnrepository.com/artifact/commons-io/commons-io
-    //implementation("commons-io:commons-io:2.13.0")
 
     //used for XML parsing in link extractor.
-    implementation("org.jsoup:jsoup:1.18.3")
+    implementation("org.jsoup:jsoup:1.23.2")
 
     //used to decompress zstd streams
     // https://mvnrepository.com/artifact/com.github.luben/zstd-jni
@@ -49,18 +48,16 @@ dependencies {
 
     //loggers
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-api
-    implementation("org.slf4j:slf4j-api:2.0.16")
+    implementation("org.slf4j:slf4j-api:2.0.18")
     // https://mvnrepository.com/artifact/org.slf4j/slf4j-simple
-    implementation("org.slf4j:slf4j-simple:2.0.12")
+    implementation("org.slf4j:slf4j-simple:2.0.18")
 
     // sqlite for database
     // https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
-    implementation("org.xerial:sqlite-jdbc:3.48.0.0")
+    implementation("org.xerial:sqlite-jdbc:3.53.4.0")
 
-    testImplementation("org.junit.jupiter:junit-jupiter:5.12.2")
+    testImplementation("org.junit.jupiter:junit-jupiter:5.14.4")
     testRuntimeOnly("org.junit.platform:junit-platform-launcher")
-    //compileOnly("org.projectlombok:lombok:1.18.26")
-    //annotationProcessor("org.projectlombok:lombok:1.18.26")
 }
 
 publishing {
